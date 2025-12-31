@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Portifólio | Vanderson Moraes</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu" id="menu">
+           <li>
+                <a href="#inicio" class="menu-link">Início</a>
+           </li>
+           <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+           </li>
+           <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+           </li>
+           <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+           </li>
+        </ul>
+
+        <div class="menu-hamburguer" id="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+            <img src=".//img/vanderson moraes.png" alt="Foto de Perfil" class="foto-perfil">
+            <h1>Vanderson Moraes</h1>
+            <p class="sub">Desenvolvedor Full Stack</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-mim">Sobre Mim</h2>
+        <div class="info-caixa">
+            <p class="paragraph">
+                Olá! Sou Vanderson, desenvolvedor Full Stack em formação, apaixonado por tecnologia desde cedo e com
+                vivência
+                prática em TI e suporte técnico, o que me trouxe foco em solução de problemas e boa comunicação.
+
+                Tenho base sólida em HTML, CSS e JavaScript, utilizando Bootstrap para interfaces responsivas.
+                Atualmente, estou evoluindo em React e Node.js, buscando criar aplicações cada vez mais completas e
+                modernas. Também possuo experiência com Figma e Illustrator, facilitando a transformação de layouts em
+                interfaces funcionais.
+
+                Atualmente, atuo como desenvolvedor freelancer, desenvolvendo projetos e soluções sob demanda, sempre
+                com foco em qualidade, organização de código e boas práticas. Estou aberto a novos projetos e
+                oportunidades.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projeto-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img class="projeto-imagem" src=".//img/projeto1.png" alt="Projeto">
+                <div class="caixa-textos">
+                    <h3 class="info-projetos">Loja de Carros</h3>
+                    <p class="paragrafo-projetos">Loja virtual moderna com animações suaves e design responsivo para uma
+                    loja de carros de luxo.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img class="projeto-imagem" src=".//img/projeto2.png" alt="Projeto">
+                <div class="caixa-textos">
+                    <h3 class="info-projetos">Página de Viagens</h3>
+                    <p class="paragrafo-projetos">Uma página interativa com roteiros de viagem mais cobiçados do mundo.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img class="projeto-imagem" src=".//img/projeto3.png" alt="Projeto">
+                <div class="caixa-textos">
+                    <h3 class="info-projetos">Microsoft</h3>
+                    <p class="paragrafo-projetos">Página da Microsoft criada para demonstar conhecimentos em diversas tecnologias</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos"> 
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhatsApp(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form"  placeholder="Digite sua Mensagem" rows="8" id="mensagem"></textarea>
+            </div>
+            
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
