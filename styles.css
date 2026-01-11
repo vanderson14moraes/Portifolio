@@ -87,11 +87,53 @@ h1 {
     font-weight: bold;
     margin: 0px;
     letter-spacing: -1px;
+    cursor: pointer;
+}
+
+h1:hover {
+    filter: brightness(1.2);
+    
 }
 
 .sub {
     font-size: 1.5rem;
     color: var(--claro);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.icone-linkedin, .icone-github  {
+    width: 40px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: rgba(79, 70, 229, 0.15);
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.35);
+}
+
+.icone-linkedin,
+.icone-github {
+    width: 40px;
+    transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: brightness(1.2);
 }
 
 .sobre {
